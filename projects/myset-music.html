@@ -1,0 +1,608 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com --><!-- Last Published: Fri Apr 22 2022 13:17:25 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.riotters.com" data-wf-page="611f6363f66a0154eef09a28" data-wf-site="606f6ee6cd4a2e32e0b144ee">
+<!-- Mirrored from www.riotters.com/projects/myset-music by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 May 2022 23:06:32 GMT -->
+<head><meta charset="utf-8"/><title>MySet Music | Case Study</title><meta content="An app designed for a Nashville-based start-up that connects music fans with their favorite artists. Our studio was responsible for the creation of the mobile app, website and brand identity design." name="description"/><meta content="MySet Music | Case Study" property="og:title"/><meta content="An app designed for a Nashville-based start-up that connects music fans with their favorite artists. Our studio was responsible for the creation of the mobile app, website and brand identity design." property="og:description"/><meta content="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61670a6a2f04aa4670c0da86_Get%20ready%20for%20a%20design%20rebellion.png" property="og:image"/><meta content="MySet Music | Case Study" property="twitter:title"/><meta content="An app designed for a Nashville-based start-up that connects music fans with their favorite artists. Our studio was responsible for the creation of the mobile app, website and brand identity design." property="twitter:description"/><meta content="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61670a6a2f04aa4670c0da86_Get%20ready%20for%20a%20design%20rebellion.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/css/riotters-website.webflow.c4315624a.css" rel="stylesheet" type="text/css"/><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="2fbceec7-5995-f423-1a01-75ab368ec3c2"] {opacity:0;}}</style><script src="../../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700","DM Sans:regular,500,700"]  }});</script><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141a25bac5347741a9742a4_favicon_32x32.ico" rel="shortcut icon" type="image/x-icon"/><link href="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141a27e690360d9a34437a3_apple-icon-256x256.png" rel="apple-touch-icon"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F1PJLYDDT6"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-F1PJLYDDT6', {'anonymize_ip': false});</script><meta name="format-detection" content="telephone=no">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+<style>
+  ::selection {
+    color: white;
+    background: #ff4918;
+    -webkit-text-fill-color: currentColor;
+  }
+  
+  .navbar {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    transform: translateY(-18px);
+  }
+  
+  .navbar .navbar-background {
+    transition: background-color 0.6s ease, backdrop-filter 0.6s ease, -webkit-backdrop-filter 0.6s ease;
+  }
+  
+  @supports ((backdrop-filter: saturate(180%) blur(20px)) or (-webkit-backdrop-filter: saturate(180%) blur(20px))) {
+    .navbar.scrolled .navbar-background {
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(0,0,0,0.72);
+    }
+    .textareafield, .success-message {
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(107, 109, 111, 0.16);
+    }
+  }
+  
+  @supports not ((backdrop-filter: saturate(180%) blur(20px)) or (-webkit-backdrop-filter: saturate(180%) blur(20px))) {
+    .navbar.scrolled .navbar-background {
+      background-color: rgba(0, 0, 0, 0.72);
+    }
+    .textareafield, .success-message {
+      background-color: rgba(107, 109, 111, 0.16);
+    }
+  }
+  
+  .intro-header {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+  
+  @media (min-height: 1200px) {
+    .intro-header {
+      min-height: 1200px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .w-nav[data-collapse="medium"] .w-nav-menu {
+      height: calc((var(--fh, 1fh) * 100) - 92px);
+    }
+    
+    .w-nav.scrolled[data-collapse="medium"] .w-nav-menu {
+      height: calc((var(--fh, 1fh) * 100) - 74px);
+    }
+  }
+
+  .button-primary {
+    position: relative;
+    transition: opacity 0.3s ease;
+    background-image: none;
+    border: 2px solid #ff4721;
+    background-clip: border-box;
+    -webkit-text-fill-color: color;
+  }
+
+  .button-primary::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    transition: opacity 0.3s ease;
+    background-color: #ff4721;
+    background-image: linear-gradient(90deg, #ff5100, #ff4721 50%, #ff201d);
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button-primary span {
+    position: relative;
+  }
+
+  .button-primary:hover {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .button-primary:hover::before {
+    opacity: 0;
+  }
+
+  .button-primary:hover span {
+    position: static;
+  }
+
+  .button-secondary {
+    position: relative;
+    transition: transform 0.5s linear;
+  }
+
+  .button-secondary::before {
+    content: attr(data-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-image: linear-gradient(84deg, #ff5100, #ff4721 43%, #ff201d);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 28px;
+    color: #fff;
+  }
+
+  .button-secondary:hover {
+    background-clip: border-box;
+    -webkit-text-fill-color: unset;
+    transition: transform 0.1s linear;
+  }
+
+  .button-secondary:hover::before {
+    opacity: 1;
+  }
+
+  .owl-carousel .owl-item img {
+      width: auto;
+      border-radius: 8px;
+  }
+
+  @media (max-width: 370px) {
+    .intro-header .div-block .div-block-3 {
+      margin-bottom: 28px;
+    }
+    .intro-header .div-block .heading {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+    .intro-header .div-block .paragraph {
+      margin-bottom: 32px;
+    }
+  }
+
+  .div-block-35 .button::before {
+    content: attr(data-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-block-35 .button:hover::before {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-image: linear-gradient(84deg, #ff5100, #ff4721 43%, #ff201d);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 28px;
+    color: #fff;
+  }
+
+  .div-block-35 .button.active {
+    border: 2px solid #ff4721;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff5100), color-stop(50%, #ff4721), to(#ff201d));
+    background-image: linear-gradient(90deg, #ff5100, #ff4721 50%, #ff201d);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .div-block-36 .div-block-37:nth-child(2n) {
+    top: 160px;
+  }
+
+  .div-block-48::before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0b0b0b;
+    background-image: radial-gradient(circle at 50% 50%, rgba(27, 27, 27, 0.33), #0b0b0b 63%);
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .div-block-48:hover::before {
+    opacity: 1;
+  }
+  
+  .owl-carousel .owl-stage {
+  	display: flex;
+  }
+  
+  .case-inslider__wrapper {
+  	width: inherit;
+  }
+  
+  .CaseInnerCircleContent {
+  	transform: translate(-50%, -50%);
+  }
+  .shop:hover .shop-logo {
+  	background-color: #414444;
+  }
+  /*
+  .verybottomcasesection {
+  	transition: transform ease .6s;
+  }
+  
+  .verybottomcasesection:hover .case-verybottomsection__link .case-verybottomsection__link-arrow {
+  	transform: translateX(8px);
+  }
+  */
+  
+  .privacy-policy__list-link--active::before {
+    content: "";
+    display: block;
+    height: calc(100% - 4px);
+    width: 2px;
+    background-image: linear-gradient(70.06deg, #FF5100 0%, #FF4721 50.28%, #FF201D 100%);
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    bottom: 0;
+    transform: translateY(-50%);
+  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.72);
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s, border 300ms ease;
+}
+  .gridboxcontent .gridboxuolist {
+  	list-style: none;
+  }
+  .gridboxcontent .gridboxuolist li {
+  	position: relative;
+  }
+  .gridboxcontent li::before {
+  	content: "";
+    width: 8px;
+    height: 8px;
+    background-image: linear-gradient(70.06deg, #FF5100 0%, #FF4721 50.28%, #FF201D 100%);
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -23px;
+    border-radius: 50%;
+  }
+  .liveproject-link__wrapper {
+  	transition: opacity ease 0.3s;
+    opacity: 1 !important;
+  }
+  .liveproject-link__wrapper:hover {
+  	opacity: 0.72 !important;
+  }
+  .liveproject-arrow {
+  	transition: transform ease 0.3s;
+  }
+  .liveproject-link__wrapper:hover .liveproject-arrow {
+    transform: translate(4px, -4px);
+  }
+  /*@media (min-width: 1023px) and (max-width: 1025px) {
+    .circle__wrapper {
+    	padding: 25vh 0;
+    }
+  }
+  @media (orientation: landscape) and (min-width: 1023px) and (max-width: 1025px) {
+    .circle__wrapper {
+    	padding: 10vh 0;
+    }
+  }
+  @media (min-width: 2440px) {
+    .circle__wrapper {
+    	padding: 25vh 0;
+    }
+  }*/
+  @media screen and (min-width: 1921px) {
+    .circle__wrapper {
+    	padding: 25vh 0;
+    }
+  }
+  .button-primary.buttoninform {
+    transition: background ease 0.3s;
+  }
+  .button-primary.buttoninform:hover {
+    -webkit-text-fill-color: #ff4721;
+    background: transparent;
+  }
+  .opacity72 {
+    opacity: 0.72 !important;
+  }
+  
+  @media screen and (max-width: 992px) {
+   	.navigation-item.w--current {
+       background: transparent !important;
+    }
+  }
+  
+  /*@media screen and (max-width: 992px) {
+   	nav.nav-menu[data-nav-menu-open] {
+       height: calc(100vh - 92px);
+    }
+    
+    div.navigation-wrap-mobile {
+      margin-top: auto;
+    }
+  }*/
+  
+  /*@supports (-webkit-touch-callout: none) {
+  	 @media screen and (max-width: 992px) {
+   	    nav.nav-menu[data-nav-menu-open] {
+           height: calc(100vh - 161px);
+        }
+     }
+  }*/
+  
+  .text-span {
+   	background-image: linear-gradient(274deg, #ff5100, #ff4721 25%, #ff201d 50%, #ff4721 75%, #ff5100);
+    background-size: 200%; 
+  }
+  
+  .heading-2,
+  .heading-3,
+  .heading-2.mb24 {
+    background-image: linear-gradient(90deg, #000, #fff 50%, #000);
+    background-size: 200%; 
+  }
+</style></head><body class="body"><div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="navbar-background"></div><nav class="navigation-items"><a href="../index.html" class="logo-link w-inline-block"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6179143b1a3082aa556dc0d1_Riotters-logo-colour%20(1).png" loading="lazy" sizes="(max-width: 479px) 100vw, 145px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6179143b1a3082aa556dc0d1_Riotters-logo-colour%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6179143b1a3082aa556dc0d1_Riotters-logo-colour%20(1)-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6179143b1a3082aa556dc0d1_Riotters-logo-colour%20(1).png 1436w" alt=""/></a><nav role="navigation" class="nav-menu w-nav-menu"><div class="container-21 w-container"><div class="div-block-382"><a href="../services" class="navigation-item navispacer mb16-m w-nav-link">What we offer</a><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/618195e532b4af0293b3e797_arrow-right.svg" loading="lazy" width="13" alt="" class="image-73"/></div><div class="div-block-384"><a href="../projects" class="navigation-item navispacer mb16-m w-nav-link">What we&#x27;ve made</a><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/618195e532b4af0293b3e797_arrow-right.svg" loading="lazy" width="13" alt="" class="image-73"/></div><div class="div-block-383"><a href="../about.html" class="navigation-item w-nav-link">Who we are</a><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/618195e532b4af0293b3e797_arrow-right.svg" loading="lazy" width="13" alt="" class="image-73"/></div><a href="../carrers" class="navigation-item hidden w-nav-link">Work with us</a><div class="navigation-wrap navigation-wrap-mobile"><div class="div-block-370"><a href="https://dribbble.com/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd54c783e901ca87815_dribbble.svg" loading="lazy" alt=""/></a><a href="https://www.behance.net/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd55c176622e05b778a_behance.svg" loading="lazy" alt=""/></a><a href="https://www.instagram.com/riotters/" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6128e962202484260a53dca5_instagram.svg" loading="lazy" alt=""/></a><a href="https://clutch.co/profile/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/616833b9b61356e1eecf046a_clutch-co-vector-logo 2.svg" loading="lazy" alt=""/></a></div><div class="div-block-385"></div><a href="../get-a-quote" class="button-primary mb16-m w-button"><span class="text-span-4">Get a quote</span></a></div></div></nav><div class="navigation-wrap"><a href="https://dribbble.com/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd54c783e901ca87815_dribbble.svg" loading="lazy" alt=""/></a><a href="https://www.behance.net/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd55c176622e05b778a_behance.svg" loading="lazy" alt=""/></a><a href="https://www.instagram.com/riotters/" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6128e962202484260a53dca5_instagram.svg" loading="lazy" alt=""/></a><a href="https://clutch.co/profile/riotters" target="_blank" class="div-block-4 top-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/616833b9b61356e1eecf046a_clutch-co-vector-logo 2.svg" loading="lazy" alt=""/></a><a href="../get-a-quote" class="button-primary w-button"><span class="text-span-4">Get a quote</span></a><div class="menu-button w-nav-button"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/606f6f0aa6f8a49e3af3c3cb_menu-icon.png" width="22" alt="" class="menu-icon"/></div></div><div class="menu-button-2 w-nav-button"><div class="icon-2 w-icon-nav-menu"></div></div></nav></div><div data-w-id="c3a76f78-eb9a-fb96-23e1-0c1d922a0c40" class="div-block-337 cookie"><div class="div-block-338"><div class="w-embed"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>iconmonstr-candy-6</title>
+    <defs>
+        <linearGradient x1="4.42528314%" y1="31.3555351%" x2="80.5505614%" y2="3.73615496%" id="linearGradient-1">
+            <stop stop-color="#FF5100" offset="0%"></stop>
+            <stop stop-color="#FF4721" offset="50.2814513%"></stop>
+            <stop stop-color="#FF201D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RIO-WEB-WWW-HOME-(smaller-fonts)-cookies" transform="translate(-399.000000, -1007.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(375.000000, 983.000000)">
+                <g id="iconmonstr-candy-6" transform="translate(24.000000, 24.000000)">
+                    <path d="M23.999,12.149 C23.95,15.983 22.106,19.372 19.293,21.527 C17.3,23.057 14.808,23.976 12.095,24 C5.631,24.057 0.044,18.893 0,12 C3.966,13.066 7.682,10.007 6,6 C10.668,6.655 12.859,3.611 12.077,0 C18.801,0.064 24.076,5.542 23.999,12.149 Z M8.423,8.026 C8.358,11.419 5.622,13.894 2.241,14.192 C3.249,18.681 7.256,21.999 12,21.999 C17.262,21.999 21.576,17.927 21.97,12.77 C22.339,7.952 19.215,3.413 14.174,2.236 C13.897,5.144 11.793,7.593 8.423,8.026 Z M13.5,17 C14.328,17 15,17.672 15,18.5 C15,19.328 14.328,20 13.5,20 C12.672,20 12,19.328 12,18.5 C12,17.672 12.672,17 13.5,17 Z M8,14.147 C9.104,14.147 10,15.043 10,16.147 C10,17.251 9.104,18.147 8,18.147 C6.896,18.147 6,17.251 6,16.147 C6,15.043 6.896,14.147 8,14.147 L8,14.147 Z M18,12 C19.104,12 20,12.896 20,14 C20,15.104 19.104,16 18,16 C16.896,16 16,15.104 16,14 C16,12.896 16.896,12 18,12 Z M13,12 C13.552,12 14,12.448 14,13 C14,13.552 13.552,14 13,14 C12.448,14 12,13.552 12,13 C12,12.448 12.448,12 13,12 Z M15.5,7 C16.328,7 17,7.672 17,8.5 C17,9.328 16.328,10 15.5,10 C14.672,10 14,9.328 14,8.5 C14,7.672 14.672,7 15.5,7 Z M3,7 C3.552,7 4,7.448 4,8 C4,8.552 3.552,9 3,9 C2.448,9 2,8.552 2,8 C2,7.448 2.448,7 3,7 Z M1.5,3 C2.328,3 3,3.672 3,4.5 C3,5.328 2.328,6 1.5,6 C0.672,6 1.77635684e-15,5.328 1.77635684e-15,4.5 C1.77635684e-15,3.672 0.672,3 1.5,3 Z M7.5,1 C8.328,1 9,1.672 9,2.5 C9,3.328 8.328,4 7.5,4 C6.672,4 6,3.328 6,2.5 C6,1.672 6.672,1 7.5,1 Z M4,0 C4.552,0 5,0.448 5,1 C5,1.552 4.552,2 4,2 C3.448,2 3,1.552 3,1 C3,0.448 3.448,0 4,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div></div><p class="paragraph-17">Yes, you guessed it - we’re using cookies. Read our <a href="../cookies-policy-riotters" class="link-5">Cookies Policy</a> if you want to know more.</p><div data-w-id="c3a76f78-eb9a-fb96-23e1-0c1d922a0c47" class="div-block-339 close-btn"><div class="w-embed"><svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1565853A-07BF-4854-87E2-62CE88C15B6F</title>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="RIO-WEB-WWW-HOME-(smaller-fonts)-cookies" transform="translate(-1507.000000, -1012.000000)" stroke="#BBBBBB" stroke-width="2">
+            <g id="Group-5" transform="translate(375.000000, 983.000000)">
+                <g id="arrow-down" transform="translate(1133.000000, 30.000000)">
+                    <path d="M12,0 L6.001,6 L12,12 M0,12 L6,6 L0,0" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div></div></div><header class="intro-header pt240 pt200-t pt144-h pt140-m pb104 pb72-t pb52-h pb40-m"><div class="case-top__container w-container"><div class="div-block-231"><div class="div-block-230"><h1 data-w-id="1e40dbc7-6a18-fa12-2837-7a78cd559fe7" style="opacity:0" class="msm_casehead">MySet Music</h1><p data-w-id="3711efaf-50d5-99c1-fdda-c3494b5a3423" style="opacity:0" class="paragraph-15">Song requests made easy</p><p data-w-id="1e40dbc7-6a18-fa12-2837-7a78cd559feb" style="opacity:0" class="msm_casetoppara mb133">An app designed for a Nashville-based start-up that connects music fans with their favorite artists. Our studio was responsible for the creation of the mobile app, website and brand identity design.</p><div class="casetoplink"><a href="https://www.mysetmusic.com/" target="_blank" class="liveproject-link__wrapper w-inline-block"><p class="paragraph liveproject-paragraph">View project live</p><div class="liveproject-arrow w-embed"><svg width="11" height="11" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 1H3.5M12 1V9M12 1L1 12" stroke="#FF4918" stroke-width="2"/>
+</svg></div></a></div></div><div class="div-block-58 msm"><div data-w-id="2fbceec7-5995-f423-1a01-75ab368ec3c2" class="div-block-59"><p class="paragraph caseheaderright"><span class="text-span-6">PROJECT DURATION</span><span><br/></span></p><ul role="list" class="list-4 w-list-unstyled"><li class="marginspace">2018 - ongoing</li></ul></div><div class="div-block-60"><p class="paragraph caseheaderright"><span class="text-span-6">SERVICES PROVIDED</span><br/></p><ul role="list" class="list-4 w-list-unstyled"><li class="marginspace">UI Design</li><li class="marginspace">UX Design</li><li class="marginspace">Research</li><li class="marginspace">Branding</li><li class="marginspace">Motion Design</li><li class="list-item-3">Social Media Materials</li></ul></div></div></div><div class="img__wrapper img__wrapper-spacing1"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dbd879b9452bb6e92811_MySetMusic_1.png" loading="lazy" sizes="(max-width: 991px) 94vw, (max-width: 1279px) 96vw, 1169.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dbd879b9452bb6e92811_MySetMusic_1-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dbd879b9452bb6e92811_MySetMusic_1-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dbd879b9452bb6e92811_MySetMusic_1-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dbd879b9452bb6e92811_MySetMusic_1.png 1360w" alt="" class="case-img__fullwidth"/></div></div></header><main><div class="case-section__wrapper pt100 pt72-t pt52-h pt40-m pb104 pb72-t pb52-h pb40-m wf-section"><div class="left-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f1847e8b374e1436055f58_Splash-Left.png" loading="lazy" alt="" class="image-14"/></div><div class="case__container w-container"><div class="div-block-124"><div data-w-id="e8dc92f6-524f-81c2-a019-54c845deab2f" style="opacity:0" class="div-block-125 fullwidth-h"><h2 class="caseheading">Challenge</h2><p class="caseparagraph">Nashville has an exceptionally large and vibrant music scene with thousands of concerts each year. Its nickname - Music City – is, therefore, no coincidence.<br/> <br/>Our client came to us with a straightforward, yet difficult challenge: to design an app that would revolutionize the way fans experience live music while simultaneously supplementing the artists’ income and streamlining the song request process.<br/></p></div><div data-w-id="4b168e7f-1413-cf95-1d3a-0e654694c71f" style="opacity:0" class="div-block-126 fullwidth-h"><h2 class="caseheading"><strong>Industry Game-changer</strong></h2><p class="caseparagraph">A local start-up with dreams of conquering the entire world. MySet Music was launched in Nashville but it is already becoming increasingly popular in other US cities and abroad with tens of thousands of active users. <br/>‍<br/>Our client’s idea is an industry game-changer that has the potential to become the new standard thanks to a mechanism that benefits both the artists and their fans.<br/></p></div></div><div class="div-block-127"><div data-w-id="2ec8ae89-fc83-44b3-228b-cac7bb110491" style="opacity:0" class="div-block-128"><h2 class="caseheading2 fullwidth-h">Outcomes</h2><div class="div-block-129"><div class="caseoutcomesinner"><div class="div-block-133"><p class="paragraph-10">18%</p><div class="html-embed-2 w-embed"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.0320001 16.68V12.136H12.256V0.487999H17.056V12.136H29.28V16.68H17.056V28.392H12.256V16.68H0.0320001Z" fill="white"/>
+</svg></div></div><div class="div-block-222"><div class="html-embed-7 w-embed"><svg width="98" height="50" viewBox="0 0 98 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 49L28.9771 23.7629L40.4971 34.1546L61.8914 14.8557L71.7657 23.7629L97 1M97 1H89.5M97 1V8.5" stroke="#FF4918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M28.9771 23.7629L1 49H97V1L71.7657 23.7629L61.8914 14.8557L40.4971 34.1546L28.9771 23.7629Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="49" y1="1" x2="49" y2="49" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF4918"/>
+<stop offset="1" stop-color="#FF4918" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg></div></div></div><p class="caseoutcomesparag">Conversion rate increased</p></div><div class="html-embed-3 w-embed"><svg width="342" height="1" viewBox="0 0 342 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.1" width="342" height="1" fill="white"/>
+</svg></div><div class="div-block-131"><div class="caseoutcomesinner"><div class="div-block-133"><p class="paragraph-10">29%</p></div><div><div class="w-embed"><svg width="84" height="71" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="22" cy="22" r="21" stroke="#FF4918" stroke-width="2"/>
+<circle opacity="0.6" cx="64" cy="49" r="19" stroke="#FF4918" stroke-width="2"/>
+<path d="M14.248 30C16.5445 31.2743 19.1876 32 22.0001 32C24.8492 32 27.5244 31.2553 29.8416 29.95" stroke="#FF4918" stroke-width="2"/>
+<path opacity="0.6" d="M56.248 57C58.5445 58.2743 61.1876 59 64.0001 59C66.8492 59 69.5244 58.2553 71.8416 56.95" stroke="#FF4918" stroke-width="2"/>
+<ellipse cx="16" cy="20.5" rx="3" ry="3.5" fill="#FF4918"/>
+<path opacity="0.6" d="M66 48C66 48 67.2344 47 69.75 47C72.2656 47 73.5 48 73.5 48" stroke="#FF4918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="28" cy="20.5" rx="3" ry="3.5" fill="#FF4918"/>
+<ellipse opacity="0.6" cx="58" cy="47.5" rx="3" ry="3.5" fill="#FF4918"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 59C29.4477 59 29 59.4477 29 60V64H25C24.4477 64 24 64.4477 24 65C24 65.5523 24.4477 66 25 66H29V70C29 70.5523 29.4477 71 30 71C30.5523 71 31 70.5523 31 70V66H35C35.5523 66 36 65.5523 36 65C36 64.4477 35.5523 64 35 64H31V60C31 59.4477 30.5523 59 30 59Z" fill="#FF4918"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11 51C10.4477 51 10 51.4477 10 52V54H8C7.44772 54 7 54.4477 7 55C7 55.5523 7.44772 56 8 56H10V58C10 58.5523 10.4477 59 11 59C11.5523 59 12 58.5523 12 58V56H14C14.5523 56 15 55.5523 15 55C15 54.4477 14.5523 54 14 54H12V52C12 51.4477 11.5523 51 11 51Z" fill="#FF4918"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 9C63.4477 9 63 9.44772 63 10V12H61C60.4477 12 60 12.4477 60 13C60 13.5523 60.4477 14 61 14H63V16C63 16.5523 63.4477 17 64 17C64.5523 17 65 16.5523 65 16V14H67C67.5523 14 68 13.5523 68 13C68 12.4477 67.5523 12 67 12H65V10C65 9.44772 64.5523 9 64 9Z" fill="#FF4918"/>
+</svg></div></div></div><p class="caseoutcomesparag">BOUNCE RATE REDUCED</p></div></div></div></div><div class="right-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f18639f09c3f2b0ef82e75_Splash-Right.png" loading="lazy" alt="" class="image-13"/></div></div><div class="case-section__wrapper pt100 pt72-t pt52-h pt40-m wf-section"><div class="case__container w-container"><div class="with-left-img__wrapper"><div class="with-left-img__inner-left pt104-h pt80-m"><div class="div-block-152"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc5ca28786242341b974_MySetMusic_2.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 353px, (max-width: 1279px) 47vw, 552px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc5ca28786242341b974_MySetMusic_2-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc5ca28786242341b974_MySetMusic_2.png 567w" alt="" class="image-17"/><p class="img-bottomparagraph maxwidthlg357">MySet for artists: create events, reach your fanbase, find new listeners.</p></div></div><div class="with-left-img__inner-right"><div class="div-block-141 fullwidth-h mb104-h mb80-m"><h2 class="caseheading">Empathize<br/>the end user</h2><p class="para caseparagraph">The app was designed with two target groups in mind:<br/><span class="text-span-7">• small, local artists, musicians and bands;</span><br/><span class="text-span-8">• their listeners. </span><br/>‍<br/>Both of these audiences have different needs and expectations that we set out to meet.<br/></p></div><div class="div-block-140"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc719fc6f734f84790d8_MySetMusic_3.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 353px, (max-width: 1279px) 47vw, 552px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc719fc6f734f84790d8_MySetMusic_3-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dc719fc6f734f84790d8_MySetMusic_3.png 567w" alt="" class="image-18"/><p class="img-bottomparagraph maxwidthlg357">MySet for fans: find concerts, tip musicians and influence their setlists.</p></div></div></div><div class="with-left-txt__wrapper pt200 pt144-t pt32-h pt0-m"><div class="with-left-txt__inner-left"><div class="div-block-145 fullwidth-h mb104-h mb56-m"><h2 class="caseheading">Building<br/>the brand<br/></h2><p class="para caseparagraph">The scope of this project was exceptionally wide and included several elements ranging from digital environments to physical objects and everything in between.</p></div><div class="div-block-146 mb104-h mb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd018ca4207f2bfef915_MySetMusic_5.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd018ca4207f2bfef915_MySetMusic_5-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd018ca4207f2bfef915_MySetMusic_5.png 567w" alt="" class="image-22"/><p class="img-bottomparagraph maxwidthlg357">Our starting point was designing the logotype.</p></div><div class="msm_div-block-149 pb104-h pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd14b024f351fc144e41_MySetMusic_7.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd14b024f351fc144e41_MySetMusic_7-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd14b024f351fc144e41_MySetMusic_7.png 567w" alt="" class="image-23"/><p class="img-bottomparagraph maxwidthlg357">We proposed a youthful and elegant brand identity.</p></div><div class="div-block-149"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd4d96291c660c75476f_MySetMusic_9.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd4d96291c660c75476f_MySetMusic_9-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd4d96291c660c75476f_MySetMusic_9.png 567w" alt="" class="image-23"/><p class="img-bottomparagraph maxwidthlg357">Most of our work was centered around digital content.</p></div></div><div class="with-left-txt__inner-right pt104-h pt0-m"><div class="div-block-148 mb104-h mb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dcf81d77d20c9af5d3fe_MySetMusic_4.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dcf81d77d20c9af5d3fe_MySetMusic_4-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dcf81d77d20c9af5d3fe_MySetMusic_4.png 567w" alt="" class="image-20"/><p class="img-bottomparagraph maxwidthlg357">We had to create the brand’s identity from scratch.</p></div><div class="msm_div-block-147 pb104-h pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd0cdb32f425a3138fe9_MySetMusic_6.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd0cdb32f425a3138fe9_MySetMusic_6-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd0cdb32f425a3138fe9_MySetMusic_6.png 567w" alt="" class="image-21"/><p class="img-bottomparagraph maxwidthlg357">The logotype was then used to create the logo and the app’s icon.</p></div><div class="msm_div-block-147 pb104-h pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd29ef851419de1d3cb7_MySetMusic_8.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd29ef851419de1d3cb7_MySetMusic_8-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd29ef851419de1d3cb7_MySetMusic_8.png 567w" alt="" class="image-21"/><p class="img-bottomparagraph maxwidthlg357">And created a user-friendly app with dedicated icons.</p></div><div class="div-block-147"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd68e77ce9c6356682d4_MySetMusic_10.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 337.984375px, (max-width: 1279px) 46vw, 539.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd68e77ce9c6356682d4_MySetMusic_10-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123dd68e77ce9c6356682d4_MySetMusic_10.png 567w" alt="" class="image-21"/><p class="img-bottomparagraph maxwidthlg357">We also designed business cards, flyers, roll-ups, and even tabletop ads for mySet.</p></div></div></div></div><div class="left-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f1847e8b374e1436055f58_Splash-Left.png" loading="lazy" alt="" class="image-15"/></div><div class="right-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f18639f09c3f2b0ef82e75_Splash-Right.png" loading="lazy" alt="" class="image-16"/></div></div><div class="case-section__wrapper nopadding2 pt200 pt144-t pt104-h pt0-m pb144-t pb104-h pb80-m wf-section"><div class="case__container w-container"><div class="with-left-img__wrapper added-padding"><div class="with-left-img__inner-left pt104-h pt80-m"><div class="div-block-156"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e23d4018d9464399ed6e_MySetMusic_11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 352.984375px, (max-width: 1279px) 47vw, 551.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e23d4018d9464399ed6e_MySetMusic_11-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e23d4018d9464399ed6e_MySetMusic_11-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e23d4018d9464399ed6e_MySetMusic_11-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e23d4018d9464399ed6e_MySetMusic_11.png 1134w" alt="" class="image-17"/><p class="img-bottomparagraph maxwidthlg357">From the listener&#x27;s perspective, the app mainly serves as a way to explore local gigs, connect with the artists, and influence setlists.</p></div></div><div class="with-left-img__inner-right"><div class="div-block-158 fullwidth-h mb104-h mb80-m"><h2 class="caseheading">Wireframing<br/>solution</h2><p class="para caseparagraph">We started the design process by laying out the content and functionalities that we thought the app had to include. We focused on the user needs and user journey from the perspective of both of the target groups.</p></div><div class="div-block-159"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e25f4018d97d7399ee7a_MySetMusic_12.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 352.984375px, (max-width: 1279px) 47vw, 551.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e25f4018d97d7399ee7a_MySetMusic_12-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e25f4018d97d7399ee7a_MySetMusic_12-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e25f4018d97d7399ee7a_MySetMusic_12-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e25f4018d97d7399ee7a_MySetMusic_12.png 1134w" alt="" class="image-18"/><p class="img-bottomparagraph maxwidthlg357">The artists benefit from the app by reaching more people, increasing their income, and getting direct feedback from the fans.</p></div></div></div></div><div class="left-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f1847e8b374e1436055f58_Splash-Left.png" loading="lazy" alt="" class="image-32"/></div></div><div class="wf-section"><div class="case__container w-container"><div data-w-id="7b6fb4e3-6283-4202-d392-caf696da7dea" class="fadein-fadeout__wrapper"><div class="fadein-fadeout__content"><h2 data-w-id="c37afce4-522b-a050-18f0-b0551e4b9041" class="caseheading4 fadein-fadeout__upperheading">And here is the result</h2><h2 data-w-id="ad6b1057-3925-301d-a569-325789d72bf3" class="caseheading4 fadein-fadeout__lowerheading">Meet the web app</h2></div></div></div></div><div class="case-section__wrapper case-section__wrapper--no-bg pt200 pt144-t pt104-h pt80-m pb200 pb144-t pb104-h pb80-m wf-section"><div class="partcontentcontainer"><div class="case__container w-container"><div class="img__wrapper pb200 pb144-t pb104-h pb80-m pt80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123df2839b898e0e53a342b_MySetMusic_13.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.984375px, (max-width: 1279px) 97vw, 1139.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123df2839b898e0e53a342b_MySetMusic_13-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123df2839b898e0e53a342b_MySetMusic_13-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123df2839b898e0e53a342b_MySetMusic_13-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123df2839b898e0e53a342b_MySetMusic_13.png 1170w" alt="" class="case-img__fullwidth case-img__borderradius"/></div><div class="img-txt__wrapper pb200 pb144-t pb104-h pb80-m"><div class="div-block-184 pb0-m"><div class="img-txt__inner-left"><div class="div-block-189"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05126e6ba16c526e2f0_MySetMusic_14.png" loading="lazy" sizes="100vw" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05126e6ba16c526e2f0_MySetMusic_14-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05126e6ba16c526e2f0_MySetMusic_14.png 567w" alt="" class="image-36 hidden"/><div class="html-embed-20 w-embed w-iframe w-script"><div style="padding: 177.41% 0 0 0; position: relative; width: 100%; max-width: 100%;">
+  <iframe
+    src="https://player.vimeo.com/video/631955849?h=ce74153a30&amp;autoplay=1&amp;loop=1&amp;color=ff4918&amp;title=0&amp;byline=0&amp;portrait=0"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<script src="../../player.vimeo.com/api/player.js"></script></div></div></div><div class="img-txt__inner-right fullwidth-h pb104-h pb40-m"><div class="div-block-191 fullwidth-h"><h2 class="caseheading">Interactive<br/>map</h2><p class="para caseparagraph">An interactive map with all of the concerts happening in the local area. <br/>‍<br/>By setting up an event page within the app the musicians can inform their fans of where and when they’re going to play next.<br/></p></div></div></div></div><div class="txt-img__wrapper pb200 pb144-t pb104-h pb80-m"><div class="div-block-186 pb0-m"><div class="txt-img__inner-left fullwidth-h pb104-h pb40-m"><div class="div-block-191 fullwidth-h"><h2 class="msm_caseheading">Connect with the artists</h2><p class="para caseparagraph">MySet provides its users with the opportunity to stay up to date with their favorite musicians. It also allows them to become monthly supporters.</p></div></div><div class="txt-img__inner-right"><div class="div-block-189"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05fc415e35c400f868e_MySetMusic_15.png" loading="lazy" sizes="100vw" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05fc415e35c400f868e_MySetMusic_15-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e05fc415e35c400f868e_MySetMusic_15.png 567w" alt="" class="image-36 hidden"/><div class="html-embed-20 w-embed w-iframe w-script"><div style="padding: 177.41% 0 0 0; position: relative; width: 100%; max-width: 100%;">
+  <iframe
+    src="https://player.vimeo.com/video/631955869?h=f90dc2adb2&amp;autoplay=1&amp;loop=1&amp;color=ff4918&amp;title=0&amp;byline=0&amp;portrait=0"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<script src="../../player.vimeo.com/api/player.js"></script></div></div></div></div></div><div class="img-txt__wrapper pb200 pb144-t pb104-h pb80-m"><div class="div-block-184 pb0-m"><div class="img-txt__inner-left"><div class="div-block-189"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e0685e1d0018d389cf36_MySetMusic_16.png" loading="lazy" sizes="100vw" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e0685e1d0018d389cf36_MySetMusic_16-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e0685e1d0018d389cf36_MySetMusic_16.png 567w" alt="" class="image-36 hidden"/><div class="html-embed-20 w-embed w-iframe w-script"><div style="padding: 177.41% 0 0 0; position: relative; width: 100%; max-width: 100%;">
+  <iframe
+    src="https://player.vimeo.com/video/631955912?h=c533f00719&amp;autoplay=1&amp;loop=1&amp;color=ff4918&amp;title=0&amp;byline=0&amp;portrait=0"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<script src="../../player.vimeo.com/api/player.js"></script></div></div></div><div class="img-txt__inner-right fullwidth-h pb104-h pb40-m"><div class="div-block-191 fullwidth-h"><h2 class="caseheading">Artist<br/>dashboard</h2><p class="para caseparagraph">A space within the app where the musicians can track their monthly earnings, plan events and where they have access to a wide range of statistics.</p></div></div></div></div><div class="txt-img__wrapper pb200 pb144-t pb104-h pb80-m"><div class="div-block-186 pb0-m"><div class="txt-img__inner-left fullwidth-h pb104-h pb40-m"><div class="div-block-191 fullwidth-h"><h2 class="caseheading">Song<br/>requests</h2><p class="para caseparagraph">The performers can see song requests in real-time and have the ability to accept or reject the suggestions.</p></div></div><div class="txt-img__inner-right"><div class="div-block-189"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e073ed2d1e650c6f5ccd_MySetMusic_17.png" loading="lazy" sizes="100vw" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e073ed2d1e650c6f5ccd_MySetMusic_17-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e073ed2d1e650c6f5ccd_MySetMusic_17.png 567w" alt="" class="image-36 hidden"/><div class="html-embed-20 w-embed w-iframe w-script"><div style="padding: 177.41% 0 0 0; position: relative; width: 100%; max-width: 100%;">
+  <iframe
+    src="https://player.vimeo.com/video/631955931?h=ec4e9fa454&amp;autoplay=1&amp;loop=1&amp;color=ff4918&amp;title=0&amp;byline=0&amp;portrait=0"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+<script src="../../player.vimeo.com/api/player.js"></script></div></div></div></div></div><div class="img__wrapper msm_img__wrapper-spacing4"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e19eed2d1e7f096f5e5b_MySetMusic_18.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.96875px, (max-width: 1279px) 97vw, 1139.96875px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e19eed2d1e7f096f5e5b_MySetMusic_18-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e19eed2d1e7f096f5e5b_MySetMusic_18-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e19eed2d1e7f096f5e5b_MySetMusic_18.png 1167w" alt="" class="case-img__fullwidth"/></div></div><div class="right-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f18639f09c3f2b0ef82e75_Splash-Right.png" loading="lazy" alt="" class="image-29"/></div></div></div><div class="wf-section"><div class="case__container w-container"><div data-w-id="b03862d9-406c-d5d2-6839-1cdb54175844" class="fadein-fadeout__wrapper"><div class="fadein-fadeout__content"><h2 class="caseheading4 fadein-fadeout__upperheading">Be more flexible...</h2><h2 class="caseheading4 fadein-fadeout__lowerheading">...with the mobile app</h2></div></div></div></div><div class="case-section__wrapper case-section__wrapper--no-bg pt200 pt144-t pt104-h pt80-m pb200 pb144-t pb104-h pb0-m wf-section"><div class="partcontentcontainer3"><div class="case__container w-container"><div class="img__wrapper pb200 pb144-t pb104-h pb0-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e287e9e5b68ab81229be_MySetMusic_19.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.984375px, (max-width: 1279px) 97vw, 1139.96875px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e287e9e5b68ab81229be_MySetMusic_19-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e287e9e5b68ab81229be_MySetMusic_19-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e287e9e5b68ab81229be_MySetMusic_19.png 1164w" alt="" class="case-img__fullwidth case-img__borderradius"/></div><div class="div-block-163"><div class="div-block-165"><div data-w-id="b7da8e1f-a426-3829-c66c-2599e26578f3" style="opacity:0" class="div-block-167"><h2 class="caseheading textcenter">Innovative tipping<br/>mechanism<br/></h2><p class="para caseparagraph">MySet’s tipping mechanism provides the fans with a way to directly support their favorite artists.</p></div></div><div class="img__wrapper pt200 pt144-t pt104-h pt80-m pb200 pb144-t pb104-h pb0-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2abed2d1ec0766f5fed_MySetMusic_20.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.96875px, (max-width: 1279px) 97vw, 1139.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2abed2d1ec0766f5fed_MySetMusic_20-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2abed2d1ec0766f5fed_MySetMusic_20-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2abed2d1ec0766f5fed_MySetMusic_20-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2abed2d1ec0766f5fed_MySetMusic_20.png 1164w" alt="" class="case-img__fullwidth case-img__borderradius"/></div></div><div class="div-block-169"><div data-w-id="b00a7343-01d1-0238-f22d-c966b16f960f" style="opacity:0" class="div-block-170"><h2 class="caseheading textcenter">Live setlists<br/></h2><p class="para caseparagraph">Through tips, the fans can also influence the setlists in real-time. The bigger the donation, the bigger the chance of the song being played during the concert.</p></div></div><div class="img__wrapper pt200 pt144-t pt104-h pt80-m pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2d5a88f14324c8a749e_MySetMusic_21.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.984375px, (max-width: 1279px) 97vw, 1139.984375px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2d5a88f14324c8a749e_MySetMusic_21-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2d5a88f14324c8a749e_MySetMusic_21-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2d5a88f14324c8a749e_MySetMusic_21-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e2d5a88f14324c8a749e_MySetMusic_21.png 1170w" alt="" class="case-img__fullwidth case-img__borderradius"/></div></div><div class="right-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f18639f09c3f2b0ef82e75_Splash-Right.png" loading="lazy" alt="" class="image-37"/></div></div></div><div class="wf-section"><div class="case__container w-container"><div data-w-id="32bf7fe4-137f-bbdd-1138-fa21816d8f20" class="fadein-fadeout__wrapper"><div class="fadein-fadeout__content"><h2 class="caseheading4 fadein-fadeout__upperheading">Extend your experience...</h2><h2 class="caseheading4 fadein-fadeout__lowerheading">...with the TV app</h2></div></div></div></div><div class="case-section__wrapper case-section__wrapper--no-bg case-section__wrapper--vertical pb304 pb200-t pb144-h pb104-m wf-section"><div class="partcontentcontainer4 pb200 pb144-t pb104-h pb80-m pt200-t pt80-m"><div class="case__container w-container"><div class="img__wrapper pb200 pb144-t pb104-h pb80-m pt80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e4f526e6ba2c0926f467_MySetMusic_22.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.984375px, (max-width: 1279px) 97vw, 1139.96875px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e4f526e6ba2c0926f467_MySetMusic_22-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e4f526e6ba2c0926f467_MySetMusic_22-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e4f526e6ba2c0926f467_MySetMusic_22-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e4f526e6ba2c0926f467_MySetMusic_22.png 1164w" alt="" class="case-img__fullwidth"/></div><div class="div-block-380"><div class="div-block-381"><h2 data-w-id="7e57b56d-9b7e-67e4-bf91-fcb7235d7174" style="opacity:0" class="caseheading4 mb0-h">Brand new website</h2></div></div><div class="img__wrapper pt200 pt144-t pt104-h pt80-m pb200 pb144-t pb104-h pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.96875px, (max-width: 1279px) 97vw, 1139.96875px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23-p-1600.png 1600w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23-p-2000.png 2000w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3255355292ba68eed2b_MySetMusic_23.png 2328w" alt="" class="case-img__fullwidth"/></div><div class="with-left-txt__wrapper"><div class="with-left-txt__inner-left"><div class="div-block-204 fullwidth-h mb104-h mb80-m"><h2 class="caseheading">Same<br/>functionalities. Accessible<br/>to more.</h2><p class="para caseparagraph">This way, we made sure that the client had the option to reach an even wider audience with mySet in the future.</p></div><div class="div-block-205"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e36e45ac0698966cd786_MySetMusic_25.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 338px, (max-width: 1279px) 46vw, 540px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e36e45ac0698966cd786_MySetMusic_25-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e36e45ac0698966cd786_MySetMusic_25-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e36e45ac0698966cd786_MySetMusic_25-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e36e45ac0698966cd786_MySetMusic_25.png 1134w" alt="" class="image-40 mb0-h"/></div></div><div class="with-left-txt__inner-right pt32-h"><div class="div-block-202"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3ff68c3e309dc5c40ee_MySetMusic_24.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 338px, (max-width: 1279px) 46vw, 540px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3ff68c3e309dc5c40ee_MySetMusic_24-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3ff68c3e309dc5c40ee_MySetMusic_24-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3ff68c3e309dc5c40ee_MySetMusic_24-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6141e3ff68c3e309dc5c40ee_MySetMusic_24.png 1134w" alt="" class="image-39"/></div></div></div></div><div class="left-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f1847e8b374e1436055f58_Splash-Left.png" loading="lazy" alt="" class="image-38"/></div></div><div class="msm_partcontentcontainer5"><div class="case__container w-container"><div class="div-block-380"><div class="div-block-381"><h2 data-w-id="a2f3ee7a-cd60-0f6d-32d7-69e2d35ea772" style="opacity:0" class="caseheading4 mb0-m">Social Media</h2></div></div><div class="img__wrapper pt200 pt144-t pt104-h pt80-m pb200 pb144-t pb104-h pb80-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e663e9e5b6e4dc124a75_MySetMusic_26.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 737.96875px, (max-width: 1279px) 97vw, 1139.96875px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e663e9e5b6e4dc124a75_MySetMusic_26-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e663e9e5b6e4dc124a75_MySetMusic_26-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e663e9e5b6e4dc124a75_MySetMusic_26-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e663e9e5b6e4dc124a75_MySetMusic_26.png 1164w" alt="" class="case-img__fullwidth"/></div><div class="with-left-txt__wrapper"><div class="with-left-txt__inner-left"><div class="div-block-204 fullwidth-h"><h2 class="caseheading">Connect with<br/>the users</h2><p class="para caseparagraph">Riotters were also responsible for the design of the brand’s SoMe profiles on Instagram, Facebook and YouTube.</p></div><div class="div-block-205"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e6e02952d518f0da8769_MySetMusic_28.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 596px) 95vw, (max-width: 767px) 567px, (max-width: 991px) 338px, (max-width: 1279px) 55vw, 567px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e6e02952d518f0da8769_MySetMusic_28-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e6e02952d518f0da8769_MySetMusic_28.png 567w" alt="" class="image-40 mb0-h"/></div></div><div class="with-left-txt__inner-right pt32-h"><div class="msm_div-block-202"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6123e71bf49c95d6e0bd5432_MySetMusic_27.png" loading="lazy" alt="" class="image-39"/></div></div></div></div><div class="right-painting"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60f18639f09c3f2b0ef82e75_Splash-Right.png" loading="lazy" alt="" class="image-45"/></div></div></div><div class="case-section__wrapper section-no-bg very-bottom-section-padding wf-section"><div class="partcontentcontainer6"><div class="case__container w-container"><div class="div-block-196"><div data-w-id="71c5d3ed-7d41-86d4-e8c6-48acba8db95d" style="opacity:0" class="div-block-225"><h2 class="verybottomheading pb16-m">Try it yourself</h2><div class="shops__wrapper"><a href="https://apps.apple.com/us/app/myset/id1476857430" target="_blank" class="shop w-inline-block"><div class="shop-logo"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/613a33dde81c4555b641e9e3_Apple.svg" loading="lazy" alt="" class="shop-img"/></div><p class="shop-txt">Download on the App Store</p></a><a href="https://play.google.com/store/apps/details?id=com.rvrbartist.android&amp;hl=en_US&amp;gl=US" target="_blank" class="shop secondshop w-inline-block"><div class="shop-logo"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/613a386f70a940a06c237fda_Google.svg" loading="lazy" alt="" class="shop-img"/></div><p class="shop-txt">Download on the Google Play</p></a></div></div></div><div class="img__wrapper img__wrapper-spacing6 pt40-m pb40-m"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61785412cb1b280e70447078_Group_139.png" loading="lazy" sizes="(max-width: 767px) 94vw, (max-width: 991px) 625.546875px, 718.90625px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61785412cb1b280e70447078_Group_139-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61785412cb1b280e70447078_Group_139-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61785412cb1b280e70447078_Group_139-p-1080.png 1080w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/61785412cb1b280e70447078_Group_139.png 1520w" alt="" class="case-img__fullwidth oncrumbz"/></div><div class="div-block-213"><div data-w-id="e3a0b8d7-6948-f94a-78ec-fec331fe92ab" style="opacity:0" class="div-block-214"><div class="div-block-215"><div class="caseoutcomesinner2"><div class="div-block-220"><p class="paragraph-10">18%</p><div class="html-embed-8 w-embed"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.0320001 16.68V12.136H12.256V0.487999H17.056V12.136H29.28V16.68H17.056V28.392H12.256V16.68H0.0320001Z" fill="white"/>
+</svg></div></div><div><div class="html-embed-9 w-embed"><svg width="98" height="50" viewBox="0 0 98 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 49L28.9771 23.7629L40.4971 34.1546L61.8914 14.8557L71.7657 23.7629L97 1M97 1H89.5M97 1V8.5" stroke="#FF4918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M28.9771 23.7629L1 49H97V1L71.7657 23.7629L61.8914 14.8557L40.4971 34.1546L28.9771 23.7629Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="49" y1="1" x2="49" y2="49" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF4918"/>
+<stop offset="1" stop-color="#FF4918" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg></div></div></div><p class="caseoutcomesparag">Conversion rate increased</p></div><div class="html-embed-13 w-embed"><svg width="342" height="1" viewBox="0 0 342 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.1" width="342" height="1" fill="white"/>
+</svg></div></div><div data-w-id="7f849f47-1e0c-1c57-f1d8-df8535c50202" style="opacity:0" class="div-block-217"><div class="div-block-219"><div class="caseoutcomesinner2"><div class="div-block-224"><p class="paragraph-10">29%</p></div><div><div class="w-embed"><svg width="84" height="71" viewBox="0 0 84 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="22" cy="22" r="21" stroke="#FF4918" stroke-width="2"/>
+<circle opacity="0.6" cx="64" cy="49" r="19" stroke="#FF4918" stroke-width="2"/>
+<path d="M14.248 30C16.5445 31.2743 19.1876 32 22.0001 32C24.8492 32 27.5244 31.2553 29.8416 29.95" stroke="#FF4918" stroke-width="2"/>
+<path opacity="0.6" d="M56.248 57C58.5445 58.2743 61.1876 59 64.0001 59C66.8492 59 69.5244 58.2553 71.8416 56.95" stroke="#FF4918" stroke-width="2"/>
+<ellipse cx="16" cy="20.5" rx="3" ry="3.5" fill="#FF4918"/>
+<path opacity="0.6" d="M66 48C66 48 67.2344 47 69.75 47C72.2656 47 73.5 48 73.5 48" stroke="#FF4918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="28" cy="20.5" rx="3" ry="3.5" fill="#FF4918"/>
+<ellipse opacity="0.6" cx="58" cy="47.5" rx="3" ry="3.5" fill="#FF4918"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 59C29.4477 59 29 59.4477 29 60V64H25C24.4477 64 24 64.4477 24 65C24 65.5523 24.4477 66 25 66H29V70C29 70.5523 29.4477 71 30 71C30.5523 71 31 70.5523 31 70V66H35C35.5523 66 36 65.5523 36 65C36 64.4477 35.5523 64 35 64H31V60C31 59.4477 30.5523 59 30 59Z" fill="#FF4918"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11 51C10.4477 51 10 51.4477 10 52V54H8C7.44772 54 7 54.4477 7 55C7 55.5523 7.44772 56 8 56H10V58C10 58.5523 10.4477 59 11 59C11.5523 59 12 58.5523 12 58V56H14C14.5523 56 15 55.5523 15 55C15 54.4477 14.5523 54 14 54H12V52C12 51.4477 11.5523 51 11 51Z" fill="#FF4918"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 9C63.4477 9 63 9.44772 63 10V12H61C60.4477 12 60 12.4477 60 13C60 13.5523 60.4477 14 61 14H63V16C63 16.5523 63.4477 17 64 17C64.5523 17 65 16.5523 65 16V14H67C67.5523 14 68 13.5523 68 13C68 12.4477 67.5523 12 67 12H65V10C65 9.44772 64.5523 9 64 9Z" fill="#FF4918"/>
+</svg></div></div></div><p class="caseoutcomesparag">BOUNCE RATE REDUCED</p></div><div class="html-embed-12 w-embed"><svg width="342" height="1" viewBox="0 0 342 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.1" width="342" height="1" fill="white"/>
+</svg></div></div></div></div></div><a data-w-id="76369796-9b8e-0fd5-4e51-4d9e86fe9d70" href="crumbz" class="verybottomcasesection w-inline-block"><div style="opacity:1" class="verybottomcasesection_bg"></div><div class="case__container w-container"><div class="verybottomcasesecton"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-block-227"><h2 data-w-id="76369796-9b8e-0fd5-4e51-4d9e86fe9d75" style="opacity:0" class="verybottomheading2">We have even<br/>more stories to tell</h2><div data-w-id="76369796-9b8e-0fd5-4e51-4d9e86fe9d79" style="opacity:0" class="div-block-228"><p class="verybottomparagraph2">Up Next: </p><div class="case-verybottomsection__link"><p class="verybottomparagraph viewlive">Crumbz</p><div style="-webkit-transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="case-verybottomsection__link-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13.2097046,4.38710056 L13.2928932,4.29289322 C13.6533772,3.93240926 14.2206082,3.90467972 14.6128994,4.20970461 L14.7071068,4.29289322 L21.7071068,11.2928932 L21.7485042,11.336853 L21.7485042,11.336853 L21.8036654,11.4046934 L21.8036654,11.4046934 L21.8753288,11.5159379 L21.8753288,11.5159379 L21.9287745,11.628664 L21.9287745,11.628664 L21.9641549,11.734007 L21.9641549,11.734007 L21.9930928,11.8819045 L21.9930928,11.8819045 L22,12 L22,12 L21.9972121,12.0752385 L21.9972121,12.0752385 L21.9797599,12.2007258 L21.9797599,12.2007258 L21.9502619,12.3121425 L21.9502619,12.3121425 L21.9063266,12.4232215 L21.9063266,12.4232215 L21.8540045,12.5207088 L21.8540045,12.5207088 L21.7803112,12.625449 L21.7803112,12.625449 L21.7071068,12.7071068 L14.7071068,19.7071068 C14.3165825,20.0976311 13.6834175,20.0976311 13.2928932,19.7071068 C12.9324093,19.3466228 12.9046797,18.7793918 13.2097046,18.3871006 L13.2928932,18.2928932 L18.584,13 L3,13 C2.44771525,13 2,12.5522847 2,12 C2,11.4477153 2.44771525,11 3,11 L18.586,11 L13.2928932,5.70710678 C12.9324093,5.34662282 12.9046797,4.77939176 13.2097046,4.38710056 L13.2928932,4.29289322 L13.2097046,4.38710056 Z" fill="#FF2C1E"/>
+    </g>
+</svg></div></div></div></div></div></div><div class="div-block-229"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778ec588ca724105edcefb_Splatter%202.png" loading="eager" alt="" class="image-46"/></div></a></div></main><footer class="footer"><div class="footer-content__wrapper w-container"><div class="container-5 footer-content__container"><h1 class="footer__heading">Wanna reach out to <span class="footer__heading-span">Riotters?</span></h1><p class="footer__paragraph">Let’s start a riot. Shoulder to shoulder.</p><div class="footer-button__wrapper"><a href="../get-a-quote" class="footer-gaq__button">Get a quote</a><div class="text-block-6">or</div><a href="mailto:contact@riotters.com" class="footer-contact__button">contact@riotters.com</a></div><div class="footer-verybottom__spacer"></div><div class="footer-menu__wrapper"><ul role="list" class="footer-menu__container"><li class="footer-menu__item"><a href="../services" class="footer-menu__link">What we offer</a></li><li class="footer-menu__item"><a href="../projects" class="footer-menu__link">What we&#x27;ve made</a></li><li class="footer-menu__item"><a href="../about.html" class="footer-menu__link">Who we are</a></li><li class="footer-menu__item hidden"><a href="../carrers" class="footer-menu__link">Work with us</a></li><li class="footer-menu__item"><a href="../privacy-policy.html" class="footer-menu__link">Privacy Policy</a></li><li class="footer-menu__item"><a href="../cookies-policy-riotters" class="footer-menu__link">Cookies</a></li></ul><div class="footer-socials__wrapper"><a href="https://dribbble.com/riotters" target="_blank" class="footer-social__link bottom-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd54c783e901ca87815_dribbble.svg" loading="lazy" alt=""/></a><a href="https://www.behance.net/riotters" target="_blank" class="footer-social__link bottom-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778cd55c176622e05b778a_behance.svg" loading="lazy" alt=""/></a><a href="https://www.instagram.com/riotters/" target="_blank" class="footer-social__link bottom-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6128e962202484260a53dca5_instagram.svg" loading="lazy" alt=""/></a><a href="https://clutch.co/profile/riotters" target="_blank" class="footer-social__link bottom-link w-inline-block"><img src="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/616833b9b61356e1eecf046a_clutch-co-vector-logo 2.svg" loading="lazy" alt=""/></a></div></div></div></div><div class="div-block-29"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6077bc2398818528470cb2ae_splatter-5.png" loading="lazy" sizes="100vw" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6077bc2398818528470cb2ae_splatter-5-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/6077bc2398818528470cb2ae_splatter-5.png 524w" alt="" class="image-11"/></div><div class="div-block-20"><img src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778ec51e057f0a835bec72_Splatter%203.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 417px, 414px" srcset="https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778ec51e057f0a835bec72_Splatter%203-p-500.png 500w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778ec51e057f0a835bec72_Splatter%203-p-800.png 800w, https://uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/60778ec51e057f0a835bec72_Splatter%203.png 828w" alt=""/></div></footer><script src="../../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8a26c.js?site=606f6ee6cd4a2e32e0b144ee" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../../uploads-ssl.webflow.com/606f6ee6cd4a2e32e0b144ee/js/webflow.0db381c18.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script>
+	const SecondaryButtons = document.querySelectorAll(".button-secondary");
+  	SecondaryButtons.forEach(function(el) {
+        el.setAttribute("data-content", el.innerText)
+    })
+</script>
+<script>
+  	const navibar = document.querySelector('.navbar');
+  	const navigationBackground = document.querySelector(".navbar-background");
+  	const hamburgerButton = document.querySelector(".menu-button-2");
+  	let fh = window.innerHeight * 0.01;
+  
+  	document.documentElement.style.setProperty('--fh', `${fh}px`);
+  
+	window.addEventListener('scroll', function() {
+      fh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--fh', `${fh}px`);
+      navibar.classList.toggle('scrolled', window.scrollY > 0);
+    })
+    
+    hamburgerButton.addEventListener('click', function() {
+      	if (!hamburgerButton.classList.contains('w--open')) {
+    		navigationBackground.style.backgroundColor = "#000";
+        } else {
+          navigationBackground.style.backgroundColor = null;
+        }
+    });
+</script>
+<script src = "../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function() {
+		$('.owl-carousel').owlCarousel({
+			/* global setting */
+			loop: true,
+			center: false,
+			freeDrag: false,
+			/* slide start at: */
+			startPosition: 0,
+			autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+          	slideTransition: 'linear',
+          	lazyLoad: true,
+			autoplayHoverPause: true,
+			autoWidth: false,
+			margin: 16,
+          	rewind: false,
+			responsive: {
+				// Webflow Mobile Portrait - breakpoint from 0 up
+				0: {
+					items: 1,
+					nav: false,
+				},
+				// Webflow Mobile Landscape - breakpoint from 480 up
+				576: {
+					items: 2,
+					nav: false,
+				},
+				// webflow Tablet - breakpoint from 767 up
+				991: {
+					items: 3,
+					nav: false,
+				},
+				// webflow Desktop - breakpoint from 991 up
+				1200: {
+					items: 4,
+					nav: false,
+				}
+			}
+		})
+	});
+  
+</script>
+
+<script src="../../unpkg.com/isotope-layout%403.0.6/dist/isotope.pkgd.min.js"></script>
+
+<script>
+  var categoryButtons = document.querySelectorAll(".div-block-35 .button");
+  categoryButtons.forEach(function(el) {
+    el.addEventListener("click", function(e) {
+      e.target.classList.toggle("active");
+    });
+  })
+
+  function gradientMove() {
+    var textSpans = document.querySelectorAll(".text-span, .heading-2, .heading-3");
+    console.log(textSpans);
+
+    for (var i = 0; i < textSpans.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = textSpans[i].getBoundingClientRect().top;
+      var elementVisible = 0;
+
+      if (elementTop < 0) {
+        textSpans[i].style.backgroundPosition = "100%";
+      } else if (elementTop > (windowHeight - elementVisible)) {
+        textSpans[i].style.backgroundPosition = "0%";
+      } else {
+        textSpans[i].style.backgroundPosition = 100 - (elementTop / (windowHeight - elementVisible)) * 100 + "%"
+      }
+    }
+  }
+
+  gradientMove();
+  window.addEventListener("scroll", gradientMove);
+</script>
+
+<script src="../../cdn.jsdelivr.net/npm/js-cookie%402/src/js.cookie.min.js"></script>
+
+<script>
+var cookieName = 'cookieClosed';
+
+if(typeof Cookies.get(cookieName) !== 'undefined') {
+$('.cookie').remove();
+}
+
+$('.close-btn').on('click', function(){
+Cookies.set(cookieName, 'ok', { expires: 14 });
+})
+</script>
+</body>
+<!-- Mirrored from www.riotters.com/projects/myset-music by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 May 2022 23:06:48 GMT -->
+</html>
